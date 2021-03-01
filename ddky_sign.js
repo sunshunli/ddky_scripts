@@ -76,7 +76,7 @@ const $ = {}
         }
       }
       console.log(lottoryObj)
-      await notify.sendNotify(`叮当账号${$.index}抽奖结果`, lottoryObj)
+      await notify.sendNotify(`叮当账号${$.index}抽奖结果`, `获得${lottoryObj.gain}, 消耗${lottoryObj.cost}`)
       // // 获取分享文章列表
       // console.log('获取分享文章列表!')
       // _ddky_sign = getSign(_token, _uid, _udate, shareList_method)
