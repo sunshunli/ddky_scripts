@@ -26,3 +26,5 @@ jobs:
       - name: '运行 【叮当快药签到及抽奖】'
         run: |
           node ddky_sign.js
+        env:
+          PUSH_KEY: ${{ secrets.PUSH_KEY }}
