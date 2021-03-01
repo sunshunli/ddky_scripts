@@ -1,0 +1,28 @@
+name: ddky_sign
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 16 * * *'
+  watch:
+    types: started
+  repository_dispatch:
+    types: ddky_sign
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repository: sunshunli/ddky_scripts
+      - name: Use Node.js 10.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 10.x
+      - name: npm install
+        run: |
+          npm install
+      - name: '运行 【叮当快药签到及抽奖】'
+        run: |
+          node ddky_sign.js

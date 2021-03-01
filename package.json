@@ -1,0 +1,18 @@
+{
+  "name": "DDKY",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pako_deflate.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.10.4",
+    "got": "^11.8.1",
+    "querystring": "^0.2.1",
+    "tough-cookie": "^4.0.0"
+  }
+}
